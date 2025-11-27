@@ -18,6 +18,8 @@ sudo dnf update -y
 sudo dnf install -y postgresql-server postgresql-contrib
 ```
 
+Configurar PostgreSQL
+
 ```bash
 sudo postgresql-setup --initdb
 sudo systemctl enable postgresql --now
