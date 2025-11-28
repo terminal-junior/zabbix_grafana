@@ -168,6 +168,96 @@ sudo firewall-cmd --reload
 
 ---
 
-# ✔️ Finalizado!
+# 📈 Integração do Zabbix com Grafana
+## 📌 1. Instalar o plugin de datasource Zabbix no Grafana
+
+O Grafana Enterprise já permite instalar plugins oficiais.
+
+Acesse o Grafana: http://SEU_IP:3000
+
+Vá em Administração → Plugins e data → Plugins
+
+Pesquisa por Zabbix → Clique para instalar
+
+O Grafana Enterprise já permite instalar plugins oficiais.
+
+Se preferir pode instalar via CLI no terminal.
+Execute:
+
+```bash
+sudo grafana-cli plugins install alexanderzobnin-zabbix-app
+sudo systemctl restart grafana-server
+```
+
+## 📌 2. Habilitar o plugin no Grafana
+
+Acesse o Grafana: http://SEU_IP:3000
+
+Vá em Administração → Plugins e data → Plugins
+
+Pesquise por Zabbix
+
+Clique no plugin Zabbix e selecione Enable
+
+## 📌 3. Criar o Data Source do Zabbix no Grafana
+
+Vá em Conexão → Data Sources → Add data source
+
+Selecione Zabbix
+
+Configure:
+
+URL: http://SEU_IP/zabbix/api_jsonrpc.php
+
+Zabbix API details:
+
+Abaixo, em Zabbix Connection:
+
+Username: Admin ou um usuário dedicado
+
+Password: senha definida no Zabbix
+
+Zabbix API version: automático
+
+Trends: habilitar (recomendado)
+
+Cache TTL: 1h (recomendado)
+
+Clique em Save & Test
+
+Se tudo estiver certo, aparecerá "Zabbix API version... OK".
+
+## 📌 4. Importar dashboards prontos
+
+O plugin fornece diversos dashboards oficiais.
+
+No menu lateral, vá para Dashboards → Browse → Zabbix
+
+Escolha um dashboard (Hosts, Overview, Network, etc.)
+
+Importe e selecione o Data Source Zabbix criado
+
+## 📌 5. Criar dashboards personalizados
+Para usar dados do Zabbix
+
+Crie um novo dashboard
+
+Adicione um panel
+
+Em Query, selecione o datasource Zabbix
+
+Tipos de consultas disponíveis:
+
+Metrics → itens do Zabbix
+
+Problems → eventos e triggers
+
+Trends → histórico consolidado
+
+Text → informações brutas
+
+## ✔️ Finalizado!
+
+Seu ambiente Zabbix + Grafana + Integração está completo.
 
 Seu ambiente Zabbix + Grafana no Rocky Linux 9 está pronto.
