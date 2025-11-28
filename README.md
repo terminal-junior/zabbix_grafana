@@ -172,7 +172,7 @@ sudo firewall-cmd --reload
 
 # 📈 Integração do Zabbix com Grafana
 
-## 📌 1. Instalar o plugin de datasource Zabbix no Grafana
+## 📌 12. Instalar o plugin de datasource Zabbix no Grafana
 
 O Grafana Enterprise já permite instalar plugins oficiais.
 
@@ -194,7 +194,7 @@ sudo systemctl restart grafana-server
 
 ---
 
-## 📌 2. Habilitar o plugin no Grafana
+## 📌 13. Habilitar o plugin no Grafana
 
 Acesse o Grafana: http://SEU_IP:3000
 
@@ -206,7 +206,7 @@ Clique no plugin Zabbix e selecione Enable
 
 ---
 
-## 📌 3. Criar o Data Source do Zabbix no Grafana
+## 📌 14. Criar o Data Source do Zabbix no Grafana
 
 Vá em Conexão → Data Sources → Add data source
 
@@ -236,7 +236,7 @@ Se tudo estiver certo, aparecerá "Zabbix API version... OK".
 
 ---
 
-## 📌 4. Importar dashboards prontos
+## 📌 15. Importar dashboards prontos
 
 O plugin fornece diversos dashboards oficiais.
 
@@ -248,7 +248,7 @@ Importe e selecione o Data Source Zabbix criado
 
 ---
 
-## 📌 5. Criar dashboards personalizados
+## 📌 16. Criar dashboards personalizados
 Para usar dados do Zabbix
 
 Crie um novo dashboard
