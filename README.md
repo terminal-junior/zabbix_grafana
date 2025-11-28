@@ -132,6 +132,8 @@ Login padrão:
 sudo yum install -y https://dl.grafana.com/grafana-enterprise/release/12.3.0/grafana-enterprise_12.3.0_19497075765_linux_amd64.rpm
 ```
 
+---
+
 ## 📌 11. Iniciar e habilitar o Grafana
 
 ```bash
@@ -190,6 +192,8 @@ sudo grafana-cli plugins install alexanderzobnin-zabbix-app
 sudo systemctl restart grafana-server
 ```
 
+---
+
 ## 📌 2. Habilitar o plugin no Grafana
 
 Acesse o Grafana: http://SEU_IP:3000
@@ -199,6 +203,8 @@ Vá em Administração → Plugins e data → Plugins
 Pesquise por Zabbix
 
 Clique no plugin Zabbix e selecione Enable
+
+---
 
 ## 📌 3. Criar o Data Source do Zabbix no Grafana
 
@@ -228,6 +234,8 @@ Clique em Save & Test
 
 Se tudo estiver certo, aparecerá "Zabbix API version... OK".
 
+---
+
 ## 📌 4. Importar dashboards prontos
 
 O plugin fornece diversos dashboards oficiais.
@@ -237,6 +245,8 @@ No menu lateral, vá para Dashboards → Browse → Zabbix
 Escolha um dashboard (Hosts, Overview, Network, etc.)
 
 Importe e selecione o Data Source Zabbix criado
+
+---
 
 ## 📌 5. Criar dashboards personalizados
 Para usar dados do Zabbix
@@ -256,6 +266,7 @@ Problems → eventos e triggers
 Trends → histórico consolidado
 
 Text → informações brutas
+
 ---
 
 ## ✔️ Finalizado!
