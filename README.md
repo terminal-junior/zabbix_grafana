@@ -212,13 +212,15 @@ Vá em Conexão → Data Sources → Add data source
 
 Selecione Zabbix
 
-Configure:
-
-URL: http://localhost/zabbix/api_jsonrpc.php
+Configure URL: 
+```bash
+http://localhost/zabbix/api_jsonrpc.php
+```
 
 ou
-
-URL: http://localhost/api_jsonrpc.php
+```bash
+http://localhost/api_jsonrpc.php
+```
 
 Zabbix API details:
 
