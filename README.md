@@ -214,7 +214,11 @@ Selecione Zabbix
 
 Configure:
 
-URL: http://SEU_IP/zabbix/api_jsonrpc.php
+URL: http://localhost/zabbix/api_jsonrpc.php
+
+ou
+
+URL: http://localhost/api_jsonrpc.php
 
 Zabbix API details:
 
